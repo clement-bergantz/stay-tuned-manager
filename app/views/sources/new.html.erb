@@ -1,0 +1,8 @@
+<div class="container">
+	<%= simple_form_for @source do |f| %>
+		<%= f.input :name %>
+		<%= f.input :url %>
+		<%= f.input :type_id, collection: Type.all %>
+		<%= f.submit 'Add this new source' %>
+	<% end %>
+</div>

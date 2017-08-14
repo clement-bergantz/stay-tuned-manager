@@ -1,0 +1,9 @@
+<div class="container">
+	<% @sources.each do |source| %>
+	<%= source.name %>
+	<%= link_to 'view details', source_path(source) %>
+	<% end %>
+</div>
+<div class="container">
+	<%= link_to 'Add a new source', new_source_path %>
+</div>
